@@ -19,4 +19,10 @@ public class CustomerDTO {
     private LocalDate dateOfBirthDTO;
     private LocalDateTime registrationDateDTO;
     private String statusDTO;
+    private java.util.List<AddressDTO> addressesDTO;
+    private java.util.List<FavoriteDTO> favoritesDTO;
+    private PreferenceDTO preferenceDTO;
+    private java.util.List<PurchaseHistoryDTO> purchaseHistoryDTO;
+    private LocalDateTime createdAtDTO;
+    private LocalDateTime updatedAtDTO;
 }
