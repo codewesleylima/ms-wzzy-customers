@@ -10,8 +10,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class FavoriteDTO {
 
-    private Long id;
-    private Long customerId;
-    private Long bookId;
-    private LocalDateTime addedDate;
+    private Long favoriteIdDTO;
+    private Long customerIdDTO;
+    private Long bookIdDTO;
+    private LocalDateTime addedDateDTO;
 }

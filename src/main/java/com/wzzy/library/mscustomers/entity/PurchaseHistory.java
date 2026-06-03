@@ -16,7 +16,7 @@ public class PurchaseHistory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long purchaseHistoryId;
 
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)

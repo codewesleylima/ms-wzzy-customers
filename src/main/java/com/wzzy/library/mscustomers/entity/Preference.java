@@ -16,7 +16,7 @@ public class Preference {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long preferenceId;
 
     @OneToOne
     @JoinColumn(name = "customer_id", nullable = false)

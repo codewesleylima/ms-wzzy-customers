@@ -11,12 +11,12 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class CustomerDTO {
 
-    private Long id;
-    private Long userId;
-    private String firstName;
-    private String lastName;
-    private String phone;
-    private LocalDate dateOfBirth;
-    private LocalDateTime registrationDate;
-    private String status;
+    private Long customerIdDTO;
+    private Long userIdDTO;
+    private String firstNameDTO;
+    private String lastNameDTO;
+    private String phoneDTO;
+    private LocalDate dateOfBirthDTO;
+    private LocalDateTime registrationDateDTO;
+    private String statusDTO;
 }

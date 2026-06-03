@@ -9,12 +9,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AddressDTO {
 
-    private Long id;
-    private Long customerId;
-    private String street;
-    private String city;
-    private String state;
-    private String zipCode;
-    private String country;
-    private Boolean isDefault;
+    private Long addressIdDTO;
+    private Long customerIdDTO;
+    private String streetDTO;
+    private String cityDTO;
+    private String stateDTO;
+    private String zipCodeDTO;
+    private String countryDTO;
+    private Boolean isDefaultDTO;
 }

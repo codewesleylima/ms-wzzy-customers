@@ -10,9 +10,9 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class PreferenceDTO {
 
-    private Long id;
-    private Long customerId;
-    private String preferredGenre;
-    private BigDecimal maxPrice;
-    private Boolean notificationEnabled;
+    private Long preferenceIdDTO;
+    private Long customerIdDTO;
+    private String preferredGenreDTO;
+    private BigDecimal maxPriceDTO;
+    private Boolean notificationEnabledDTO;
 }

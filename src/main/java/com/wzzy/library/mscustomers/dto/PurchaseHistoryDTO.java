@@ -11,10 +11,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class PurchaseHistoryDTO {
 
-    private Long id;
-    private Long customerId;
-    private Long bookId;
-    private LocalDateTime purchaseDate;
-    private Integer quantity;
-    private BigDecimal price;
+    private Long purchaseHistoryIdDTO;
+    private Long customerIdDTO;
+    private Long bookIdDTO;
+    private LocalDateTime purchaseDateDTO;
+    private Integer quantityDTO;
+    private BigDecimal priceDTO;
 }
