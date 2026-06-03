@@ -15,32 +15,32 @@ public class Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long addressId;
+    private Long addressIdEntity;
 
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
-    private Customer customer;
+    private Customer customerEntity;
 
     @Column(nullable = false)
-    private String street;
+    private String streetEntity;
 
     @Column(nullable = false)
-    private String city;
+    private String cityEntity;
 
-    private String state;
-
-    @Column(nullable = false)
-    private String zipCode;
+    private String stateEntity;
 
     @Column(nullable = false)
-    private String country;
+    private String zipCodeEntity;
 
     @Column(nullable = false)
-    private Boolean isDefault = false;
+    private String countryEntity;
+
+    @Column(nullable = false)
+    private Boolean isDefaultEntity = false;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAtEntity = LocalDateTime.now();
 
     @Column(nullable = false)
-    private LocalDateTime updatedAt = LocalDateTime.now();
+    private LocalDateTime updatedAtEntity = LocalDateTime.now();
 }

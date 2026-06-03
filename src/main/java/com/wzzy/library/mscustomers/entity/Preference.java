@@ -16,22 +16,22 @@ public class Preference {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long preferenceId;
+    private Long preferenceIdEntity;
 
     @OneToOne
     @JoinColumn(name = "customer_id", nullable = false)
-    private Customer customer;
+    private Customer customerEntity;
 
-    private String preferredGenre;
+    private String preferredGenreEntity;
 
-    private BigDecimal maxPrice;
+    private BigDecimal maxPriceEntity;
 
     @Column(nullable = false)
-    private Boolean notificationEnabled = true;
+    private Boolean notificationEnabledEntity = true;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAtEntity = LocalDateTime.now();
 
     @Column(nullable = false)
-    private LocalDateTime updatedAt = LocalDateTime.now();
+    private LocalDateTime updatedAtEntity = LocalDateTime.now();
 }

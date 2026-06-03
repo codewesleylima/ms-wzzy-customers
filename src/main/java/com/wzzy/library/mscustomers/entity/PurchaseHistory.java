@@ -16,24 +16,24 @@ public class PurchaseHistory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long purchaseHistoryId;
+    private Long purchaseHistoryIdEntity;
 
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
-    private Customer customer;
+    private Customer customerEntity;
 
     @Column(nullable = false)
-    private Long bookId;
+    private Long bookIdEntity;
 
     @Column(nullable = false)
-    private LocalDateTime purchaseDate = LocalDateTime.now();
+    private LocalDateTime purchaseDateEntity = LocalDateTime.now();
 
     @Column(nullable = false)
-    private Integer quantity;
+    private Integer quantityEntity;
 
     @Column(nullable = false)
-    private BigDecimal price;
+    private BigDecimal priceEntity;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAtEntity = LocalDateTime.now();
 }

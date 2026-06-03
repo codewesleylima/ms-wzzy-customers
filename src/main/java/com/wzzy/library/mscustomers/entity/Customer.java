@@ -16,42 +16,42 @@ public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long customerId;
+    private Long customerIdEntity;
 
     @Column(nullable = false, unique = true)
-    private Long userId;
+    private Long userIdEntity;
 
     @Column(nullable = false)
-    private String firstName;
+    private String firstNameEntity;
 
     @Column(nullable = false)
-    private String lastName;
+    private String lastNameEntity;
 
-    private String phone;
+    private String phoneEntity;
 
-    private LocalDate dateOfBirth;
-
-    @Column(nullable = false)
-    private LocalDateTime registrationDate = LocalDateTime.now();
+    private LocalDate dateOfBirthEntity;
 
     @Column(nullable = false)
-    private String status = "ACTIVE";
+    private LocalDateTime registrationDateEntity = LocalDateTime.now();
+
+    @Column(nullable = false)
+    private String statusEntity = "ACTIVE";
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
-    private java.util.List<Address> addresses;
+    private java.util.List<Address> addressesEntity;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
-    private java.util.List<Favorite> favorites;
+    private java.util.List<Favorite> favoritesEntity;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
-    private Preference preference;
+    private Preference preferenceEntity;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
-    private java.util.List<PurchaseHistory> purchaseHistory;
+    private java.util.List<PurchaseHistory> purchaseHistoryEntity;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAtEntity = LocalDateTime.now();
 
     @Column(nullable = false)
-    private LocalDateTime updatedAt = LocalDateTime.now();
+    private LocalDateTime updatedAtEntity = LocalDateTime.now();
 }
